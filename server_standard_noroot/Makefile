@@ -8,4 +8,5 @@ run:
 	cp .vimrc ~/.vimrc
 	cp .tmux.conf ~/.tmux.conf
 	
-	
+setup-aws:
+	sudo apt install awscli
