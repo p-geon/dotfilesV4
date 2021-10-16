@@ -112,7 +112,6 @@ alias mb="make b"
 ## Python
 alias ps-python="ps aux | grep python"
 alias ci="conda info -e"
-alias ip="ipython"
 alias denva="direnv allow ."
 alias sat="source activate tf"
 
