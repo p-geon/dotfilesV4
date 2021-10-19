@@ -1,35 +1,27 @@
 # --------------------
 # bash
 # --------------------
-alias ba="cd ~/git/BrokenArrow/"
-alias B="cd ~/git/BrokenArrow/"
 alias A="cat ~/.bash_aliases"
 alias S="A | grep"
-alias T="cp ~/git/BrokenArrow/dotfiles/.bashrc ~/.bashrc"
 
 # --------------------
-# exa
+# ls/exa + tree
 # --------------------
 alias lllll="ls"
+# if use brew, uncomment below.
 #alias ls="exa --group-directories-first --color=auto --icons"
 alias l="ls"
 alias sl="ls"
 alias ll="ls -l"
 alias la="ls -la"
 alias lt="ls -T"
-#alias T="exa -T --color=auto --icons"
-alias n="ls -l | wc -n"
-alias pw="pwd"
 
-alias Td="tree -d -L 2 ./"
-alias T1d="tree -d -L 1 ./"
-alias T2d="tree -d -L 2 ./"
-alias T3d="tree -d -L 3 ./"
-alias T1="tree -L 1 ./"
-alias T2="tree -L 2 ./"
-alias T3="tree -L 3 ./"
-alias TT="tree -d -L 2 ~/"
-alias TTT="tree -d -L 3 ~/"
+# tree variant
+alias t2d="tree -d -L 2 ./"
+alias t3d="tree -d -L 3 ./"
+alias t2="tree -L 2 ./"
+alias t3="tree -L 3 ./"
+alias n="ls -l | wc -n"
 
 # --------------------
 # cd variant
@@ -50,11 +42,9 @@ alias ,="cd -"
 # --------------------
 # git
 # --------------------
-alias g="git"
 alias gaccount="git config user.name && git config user.email"
 ## add
-alias gadry="git add -A --dry-run" #pre-check without adding
-alias ga="git add"
+alias gad="git add -A --dry-run" #pre-check without adding
 alias gaa="git add -A" #all
 alias gau="git add -u" #exclude untrack files
 alias gap="git add -p" #patch
@@ -92,7 +82,6 @@ alias gswap="git stash -u && git checkout -b swap && git stash pop"
 # Docker
 # --------------------
 # Docker
-alias d="docker"
 alias di="docker images"
 alias dp="docker ps -a"
 
@@ -101,14 +90,14 @@ alias dstop="docker ps -a -q | xargs docker rm -f"
 alias dclean="dstop && drmi"
 
 # --------------------
+# tmux
+# --------------------
+alias t="tmux"
+alias ta="tmux a"
+
+# --------------------
 # others
 # --------------------
-# make support
-alias h="make help"
-alias mh="make help"
-alias b="make b"
-alias mb="make b"
-
 ## Python
 alias ps-python="ps aux | grep python"
 alias ci="conda info -e"
